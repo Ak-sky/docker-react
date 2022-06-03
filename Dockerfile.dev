@@ -9,5 +9,5 @@ RUN npm install
 #keep COPY if you are going to use COPY instruction!!!!!!
 COPY ./ ./
 
-#CMD ["npm", "run", "start"]
+CMD ["npm", "run", "start"]
 
