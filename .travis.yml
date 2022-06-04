@@ -10,6 +10,7 @@ script:
 
 deploy:
  provider: elasticbeanstalk
+ edge: true
  region: "ap-south -1"
  app: "docker-react"
  env: "Dockerreact-env"
@@ -18,5 +19,5 @@ deploy:
  on:
   branch: master
  access_key_id: "$AWS_AK"
- secret_access_key:
-  secure: "$AWS_SK"
+ secret_access_key: "$AWS_SK"
+ skip_cleanup: true
